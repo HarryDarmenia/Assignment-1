@@ -1,8 +1,11 @@
 
 import java.awt.*;
+import java.util.Random;
 
 
 class Grid{
+
+    Random rand = new Random();
     
     Cell[][] cells = new Cell[20][20];
     
@@ -21,10 +24,13 @@ class Grid{
                 cells[i][j].paint(g, mousePos); 
             }
         }
+        g.drawRect(740,80,230, 140);
+        g.drawString("Type of cell:", 750, 110);
+        g.drawString("The crossing time of that cell:",750, 160);
     }  
-    public Cell cellAtColRow(int r, int c){
-        return cells[c][r];
-    }
+
+
+
 }
 
 

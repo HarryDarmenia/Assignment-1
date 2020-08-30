@@ -25,7 +25,7 @@ class Grid{
             }
         }
         
-        CutOff = (int)(YellowCells.length* (20.0/100.0));
+        CutOff = (int)(YellowCells.length* (80.0/100.0));
 
         for(int i=0; i<YellowCells.length;i++){
             for(int k=0; k<YellowCells.length; k++){

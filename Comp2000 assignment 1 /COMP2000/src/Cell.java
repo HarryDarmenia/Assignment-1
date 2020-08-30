@@ -13,7 +13,9 @@ class Cell extends Rectangle{
     
     
     void paint(Graphics g, Point mousePos){
-        if(c==1){
+        if (contains(mousePos)){
+            g.setColor(Color.GRAY);
+        }else if(c==1){
             g.setColor(Color.DARK_GRAY);
         }else if(c==2){
             g.setColor(Color.BLUE);
@@ -22,9 +24,6 @@ class Cell extends Rectangle{
         }
         else{
             g.setColor(new Color(j,j,0));
-        }
-        if (contains(mousePos)){          // delete next 3 lines to get rid of grey box where mouse is
-            g.setColor(Color.GRAY);
         }
         g.fillRect(x,y,size,size);
         g.setColor(Color.BLACK);

@@ -29,7 +29,7 @@ class Grid{
 
         for(int i=0; i<YellowCells.length;i++){
             for(int k=0; k<YellowCells.length; k++){
-                if (YellowCells[i].j<YellowCells[k].j){
+                if (YellowCells[i].j>YellowCells[k].j){
                     countt++;
                 }
             }

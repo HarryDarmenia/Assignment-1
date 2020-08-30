@@ -39,26 +39,3 @@ class Cell extends Rectangle{
         }
     }  
 } 
-
-
-
-
-
-/*abstract //Info Box
-        if (contains(mousePos)){
-            g.setColor(Color.GRAY);
-            if( c==1){
-                g.drawString("WALL", 750, 130);
-                g.drawString("1000", 750, 180);
-            }else if(c==2){
-                g.drawString("OASIS", 750, 130);
-                g.drawString("8", 750, 180);
-            }else if (c==3){
-                g.drawString("PALM TREE", 750, 130);
-                g.drawString("2", 750, 180);
-            } else{
-                g.drawString("SAND", 750, 130);
-                g.drawString("5", 750, 180);
-            }
-        } 
-        */
